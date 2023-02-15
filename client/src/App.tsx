@@ -60,7 +60,7 @@ function App() {
 
       // save user to database....
       if (profileObj) {
-        const response = await fetch("http://localhost:8088/api/v1/users", {
+        const response = await fetch("https://refine-dashboard-hy6b.onrender.com/api/v1/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -129,7 +129,7 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("http://localhost:8088/api/v1")}
+          dataProvider={dataProvider("https://refine-dashboard-hy6b.onrender.com/api/v1")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
