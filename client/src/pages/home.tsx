@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <Box>
-      <Typography fontSize={25} fontWeight={700} color="#11142d">
+      <Typography fontSize={25} fontWeight={700} variant="body2">
         Dashboard
       </Typography>
       <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>

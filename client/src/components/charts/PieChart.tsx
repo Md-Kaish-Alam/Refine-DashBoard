@@ -2,14 +2,19 @@ import React from 'react'
 import ReactApexChart from 'react-apexcharts'
 import { Box, Typography, Stack } from '@pankod/refine-mui'
 import { PieChartProps } from 'interfaces/home'
+import { useTheme } from '@pankod/refine-mui'
+
 
 const PieChart = ({ title, value, series, colors }: PieChartProps) => {
+  const theme = useTheme();
+
   return (
     <Box
       id='chart'
       flex={1}
       display='flex'
-      bgcolor='#fcfcfc'
+      // bgcolor={theme.mode === 'light' ? ' ' : ''}
+      bgcolor="#fcfcfc"
       flexDirection='row'
       justifyContent='space-between'
       alignItems='center'
